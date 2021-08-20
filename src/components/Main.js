@@ -12,18 +12,21 @@ const Main = () => {
 
   const formSubmit = (e) => {
     e.preventDefault();
-    let newItem = {
-      title: e.target.elements[0].value,
-      isCompleted: false,
-    };
-    setTasks([...tasks, newItem]);
+    if (e.target.elements[0].value !== "") {
+      let newItem = {
+        title: e.target.elements[0].value,
+        isCompleted: false,
+      };
+      setTasks([...tasks, newItem]);
+    }
+    e.target.elements[0].value = ""
   };
 
   const toggleStatus = (e, index) => {
     e.preventDefault();
-    let exitingArray =[...tasks]
+    let exitingArray = [...tasks];
     exitingArray[index].isCompleted = !exitingArray[index].isCompleted;
-    setTasks(exitingArray)
+    setTasks(exitingArray);
   };
 
   return (
