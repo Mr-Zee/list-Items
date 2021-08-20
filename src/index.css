@@ -34,9 +34,16 @@ body {
     border: 1px solid grey;
 }
 
-.add-button {}
+.add-button {
+    background: rgb(185, 204, 75);
+    width: 50px;
+}
 
 .task {
     display: flex;
     justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
 }
