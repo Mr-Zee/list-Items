@@ -19,6 +19,7 @@ const Main = () => {
       };
       setTasks([...tasks, newItem]);
     }
+   
     e.target.elements[0].value = ""
   };
 
