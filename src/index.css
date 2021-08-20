@@ -18,3 +18,20 @@ body {
     padding: 30px;
     border-radius: 5px;
 }
+
+.new-task-form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.new-input-task,
+.add-button {
+    margin: 5px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.add-button {}
