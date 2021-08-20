@@ -35,3 +35,8 @@ body {
 }
 
 .add-button {}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+}

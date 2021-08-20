@@ -1,7 +1,8 @@
 const Task = (props) => {
   return (
     <div className="task">
-       {props.title} 
+      <p> {props.title}</p>
+      <p>{props.isCompleted ? "Yes" : "No"}</p>
     </div>
   );
 };
