@@ -35,7 +35,7 @@ const Main = () => {
           <Task
             title={item.title}
             isCompleted={item.isCompleted}
-            key={item.title}
+            key={index}
           />
         );
       })}
