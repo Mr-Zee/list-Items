@@ -19,7 +19,6 @@ const Main = () => {
       };
       setTasks([...tasks, newItem]);
     }
-   
     e.target.elements[0].value = ""
   };
 
@@ -36,7 +35,7 @@ const Main = () => {
         <input
           className="new-input-task"
           type="text"
-          placeholder="item"
+          placeholder="add item"
           name="task"
         />
         <input className="add-button" type="submit" value="Add" />
